@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: 112.5% / 1.625 -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  height: 20rem;
+  text-align: center;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+#imgLogo {
+  width: 5rem;
+  height: 2.5rem;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+}
+
+#support {
+  margin: 0;
+  border: 1px solid rgb(255, 152, 0);
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+section h1 {
+  color: rgb(32, 35, 41);
+  margin: 2rem;
+  margin-bottom: 0;
+  display: flex;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+section form {
+  display: flex;
+  justify-content: center;
+  width: 100rem;
+  height: 100rem;
+}
+
+#searchBox {
+  width: calc(60% - 50px);
+  height: 2rem;
+  outline: none;
+  padding-left: 1rem;
+  border: solid 1px;
+  border-radius: 10rem;
+  font-size: 1rem;
+  text-align: center;
+  transition: top 0.3s ease;
+}
+
+#searchBox:focus {
+  border: 1px solid #000000;
+  transition: 0.35s ease;
+  color: #000000;
+}
+
+#searchBox:focus::-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+#btn {
+  position: relative;
+  float: left;
+  background-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  right: 2.7rem;
+  top: 0.15rem;
+  border: 0;
+}
+
+button img {
+  width: 2rem;
+  height: 2rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem;
+  background-color: rgb(39, 43, 51);
+}
+
+.cardStyle {
+  display: inline-block;
+  background-color: rgb(60, 62, 68);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  width: 40rem;
+}
+
+.insideCard {
+  display: flex;
+  text-align: start;
+}
+
+.cardStyle img {
+  border-radius: 5%;
+  width: 10rem;
+  height: 10rem;
+  margin: 0.2rem;
+  object-fit: cover;
+}
+
+.textCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cardStyle p,
+h1 {
+  flex-direction: column;
+  margin: 0.5rem;
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  background-color: rgb(31, 41, 33);
+  color: rgb(85, 89, 85);
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+div button {
+  width: 10rem;
+  height: 1.5rem;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 1rem;
+}
+div button:hover {
+  transition: 0.35s ease;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+footer span {
+  color: rgb(255, 255, 255);
+}

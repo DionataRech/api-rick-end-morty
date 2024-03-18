@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rick And Morty</title>
+  </head>
+  <body>
+    <header>
+      <nav class="headerNav">
+        <img
+          src="../style/imgLogo.png"
+          alt="logo-rick-end-morty"
+          id="imgLogo"
+        />
+        <ul id="about">
+          <li>Docs</li>
+          <li>About</li>
+          <li id="support">Support Us</li>
+        </ul>
+      </nav>
+      <section>
+        <h1>The Rick End Morty API</h1>
+        <form id="search">
+          <input type="search" id="searchBox" placeholder="Search" />
+          <button id="btn">
+            <img src="../style/search-icon-png-5.png" alt="imagem-lupa" />
+          </button>
+        </form>
+      </section>
+    </header>
+    <main><div id="divCards"></div></main>
+    <footer>
+      <div>
+        <div id="paginaAtual"></div>
+        <button id="paginaAnterior" onclick="btnAnterior()">Anterior</button>
+        <button id="proximaPagina" onclick="proximaBtn()">Proxima</button>
+      </div>
+      <small>Desenvolvido por <span>Dionata-Rech</span> em 2024</small>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
